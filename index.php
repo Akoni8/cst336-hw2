@@ -91,7 +91,7 @@
                             break;
                     }
                      echo "Your character is: ".$person."<br>"; 
-                     echo "<img src='./images/$person.jpg' alt='$person' title='".ucfirst($person)."'width='70'/>";
+                     echo "<img src='./images/$person.jpg' alt='$person' title='".ucfirst($person)."'width='300'/>";
                      //echo "Your character is: ".$character."<br>";
                      
                 }
