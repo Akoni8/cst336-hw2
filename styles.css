@@ -29,11 +29,11 @@ h1 {
 }
 
 #powerlevel {
-    color: gold;
+    color: red;
 }
 
 span {
-    font-size:2em;
+    font-size:1.5em;
 }
 
 div {
@@ -47,6 +47,21 @@ div {
 }
 
 #generator {
-    text-transform: uppercase;
     color: orange;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.possibility {
+    font-style: italic;
+}
+
+.number{
+    text-decoration: underline;
+}
+
+.power {
+    color:gold;
 }

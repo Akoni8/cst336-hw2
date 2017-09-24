@@ -44,7 +44,9 @@
                             for($i = 0; $i < count($saiyan); $i++) {
                                  $sum++;
                             }
-                            echo "Amount of possible Saiyans: ".$sum."<br>";
+                            echo "<div class=possibility>";
+                            echo "Amount of possible Saiyans: <span class=number>".$sum."</span><br>";
+                            echo "</div>";
                             $character = array_rand($saiyan);
                             $person = $saiyan[$character];
                             array_pop($saiyan);
@@ -53,7 +55,9 @@
                             for($i = 0; $i < count($namekian); $i++) {
                                 $sum++;
                             }
-                            echo "Amount of possible Namekians: ".$sum."<br>";
+                            echo "<div class=possibility>";
+                            echo "Amount of possible Namekians: <span class=number>".$sum."</span><br>";
+                            echo "</div>";
                             $character = array_rand($namekian);
                             $person = $namekian[$character];
                             break;
@@ -61,7 +65,9 @@
                             for($i = 0; $i < count($frieza); $i++) {
                             $sum++;
                             }
-                             echo "Amount of possible Frieza Army: ".$sum."<br>";
+                            echo "<div class=possibility>";
+                             echo "Amount of possible Frieza Army: <span class=number>".$sum."</span><br>";
+                             echo "</div>";
                             $character = array_rand($frieza);
                             $person = $frieza[$character];
                             break;
@@ -69,7 +75,9 @@
                             for($i = 0; $i < count($human); $i++) {
                             $sum++;
                             }
-                            echo "Amount of possible Humans: ".$sum."<br>";
+                            echo "<div class=possibility>";
+                            echo "Amount of possible Humans: <span class=number>".$sum."</span><br>";
+                            echo "</div>";
                             $character = array_rand($human);
                             $person = $human[$character];
                             break;
@@ -77,13 +85,13 @@
                     
                     echo "<div id=powerlevel>";
                     if($randomValue == 0) {
-                       echo "Your Power Level is <span>over 9000!!!</span>";
+                       echo "Your Power Level is <span class=power>over 9000!!!</span>";
                     }
                     elseif ($randomValue == 2 ||$randomValue == 1) {
-                        echo "Your Power Level is <span>... eh.</span>";
+                        echo "Your Power Level is <span class=power>... eh.</span>";
                     }
                     else {
-                        echo "Your Power Level is <span>a joke!</span>";
+                        echo "Your Power Level is <span class=power>a joke!</span>";
                     }
                     echo "</div>";
                     
