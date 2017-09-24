@@ -1,9 +1,6 @@
-#container {
+.container {
     text-align: center;
     margin: 0 auto;
-    color: #fff;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-    
 }
 
 body {
@@ -15,8 +12,41 @@ body {
     font-size: 1.4em;
     font-weight: bold;
 }
-
 img {
-    max-width:200%;
-    max-height:200%;
+    width: 400px;
+}
+
+#character {
+    font-size: 2em;
+}
+
+#pic {
+    padding:30px;
+}
+
+h1 {
+    font-size:3em;
+}
+
+#powerlevel {
+    color: gold;
+}
+
+span {
+    font-size:2em;
+}
+
+div {
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+#heading {
+    text-transform: uppercase;
+    padding-bottom: 0px;
+}
+
+#generator {
+    text-transform: uppercase;
+    color: orange;
 }

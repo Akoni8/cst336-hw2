@@ -8,8 +8,9 @@
     <body>
         
         <?php
-            echo "<div id=container>";   
-                echo "<h1>Dragon Ball Z Generator </h1>";
+            echo "<div class=container>";   
+                echo "<h1 id=heading>Dragon Ball Z</h1>";
+                echo "<h2 id=generator>Generator </h2>";
                 
                 /*
                 Must include at least two loops (e.g., for, while, do while)
@@ -29,8 +30,6 @@
                 
             echo "</div>";  
 
-                
-                
                 function generateCharacter($randomValue) {
 
                     $saiyan = array("Goku","Vegeta","Gohan","Goten","Trunks","Napa","Raditz","Bardock", "Broly");
@@ -75,8 +74,25 @@
                             $person = $human[$character];
                             break;
                     }
-                     echo "Your character is: ".$person."<br>"; 
-                     echo "<img src='./images/$person.jpg' alt='$person' title='".ucfirst($person)."'width='300'/>";
+                    
+                    echo "<div id=powerlevel>";
+                    if($randomValue == 0) {
+                       echo "Your Power Level is <span>over 9000!!!</span>";
+                    }
+                    elseif ($randomValue == 2 ||$randomValue == 1) {
+                        echo "Your Power Level is <span>... eh.</span>";
+                    }
+                    else {
+                        echo "Your Power Level is <span>a joke!</span>";
+                    }
+                    echo "</div>";
+                    
+                    echo "<div id=character>";  
+                    echo "Your character is: ".$person;
+                    echo "</div>"; 
+                    echo "<div id=pic>";
+                    echo "<img src='./images/$person.jpg' alt='$person' title='".ucfirst($person)."'width='400'/>";
+                    echo "</div>"; 
                 }
                 
         ?>
